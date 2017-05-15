@@ -14,11 +14,6 @@ RUN apk update && \
   cd && \
   rm -rf /tmp/client-${VERSION} && \
   apk del build-base cmake && \
-  apk add git py2-pip coreutils && \
-  git clone --depth 1 https://github.com/owncloud/smashbox.git /smashbox && \
-  cd /smashbox && \
-  pip install -r requirements.txt && \
-  cd && \
   rm -rf /var/cache/apk/* /tmp/*
 
 WORKDIR /
