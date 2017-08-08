@@ -5,45 +5,9 @@
 This is our minimal image for [client](https://github.com/owncloud/client) based on our [Alpine container](https://registry.hub.docker.com/u/owncloud/alpine/).
 
 
-## Usage
-
-```bash
-docker run -ti \
-  --name client \
-  owncloud/client:latest
-```
-
-
-## Build locally
-
-The available versions should be already pushed to the Docker Hub, but in case you want to try a change locally you can always execute the following command to get this image built locally:
-
-```
-IMAGE_NAME=owncloud/client ./hooks/build
-```
-
-
 ## Versions
 
-* [latest](https://github.com/owncloud-docker/client/tree/master) available as ```owncloud/client:latest``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.3.2](https://github.com/owncloud-docker/client/tree/2.3.2) available as ```owncloud/client:2.3.2``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.3.1](https://github.com/owncloud-docker/client/tree/2.3.1) available as ```owncloud/client:2.3.1``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.3.0](https://github.com/owncloud-docker/client/tree/2.3.0) available as ```owncloud/client:2.3.0``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.2.4](https://github.com/owncloud-docker/client/tree/2.2.4) available as ```owncloud/client:2.2.4``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.2.3](https://github.com/owncloud-docker/client/tree/2.2.3) available as ```owncloud/client:2.2.3``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.2.2](https://github.com/owncloud-docker/client/tree/2.2.2) available as ```owncloud/client:2.2.2``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.2.1](https://github.com/owncloud-docker/client/tree/2.2.1) available as ```owncloud/client:2.2.1``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.2.0](https://github.com/owncloud-docker/client/tree/2.2.0) available as ```owncloud/client:2.2.0``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.1.1](https://github.com/owncloud-docker/client/tree/2.1.1) available as ```owncloud/client:2.1.1``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.1.0](https://github.com/owncloud-docker/client/tree/2.1.0) available as ```owncloud/client:2.1.0``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.0.2](https://github.com/owncloud-docker/client/tree/2.0.2) available as ```owncloud/client:2.0.2``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.0.1](https://github.com/owncloud-docker/client/tree/2.0.1) available as ```owncloud/client:2.0.1``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [2.0.0](https://github.com/owncloud-docker/client/tree/2.0.0) available as ```owncloud/client:2.0.0``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [1.8.4](https://github.com/owncloud-docker/client/tree/1.8.4) available as ```owncloud/client:1.8.4``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [1.8.3](https://github.com/owncloud-docker/client/tree/1.8.3) available as ```owncloud/client:1.8.3``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [1.8.2](https://github.com/owncloud-docker/client/tree/1.8.2) available as ```owncloud/client:1.8.2``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [1.8.1](https://github.com/owncloud-docker/client/tree/1.8.1) available as ```owncloud/client:1.8.1``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
-* [1.8.0](https://github.com/owncloud-docker/client/tree/1.8.0) available as ```owncloud/client:1.8.0``` at [Docker Hub](https://registry.hub.docker.com/u/owncloud/client/)
+To get an overview about the available versions please take a look at the [GitHub branches](https://github.com/owncloud-docker/client/branches/all) or our [Docker Hub tags](https://hub.docker.com/r/owncloud/client/tags/), these lists are always up to date.
 
 
 ## Volumes
@@ -63,6 +27,15 @@ IMAGE_NAME=owncloud/client ./hooks/build
 ```
 
 
+## Build locally
+
+The available versions should be already pushed to the Docker Hub, but in case you want to try a change locally you can always execute the following command to get this image built locally:
+
+```
+IMAGE_NAME=owncloud/client ./hooks/build
+```
+
+
 ## Issues, Feedback and Ideas
 
 Open an [Issue](https://github.com/owncloud-docker/client/issues)
@@ -76,7 +49,6 @@ Fork -> Patch -> Push -> Pull Request
 ## Authors
 
 * [Thomas Boerger](https://github.com/tboerger)
-* [Thomas Mueller](https://github.com/DeepDiver1975)
 
 
 ## License
