@@ -1,5 +1,6 @@
 # ownCloud: Client
 
+[![Build Status](https://drone.owncloud.com/api/badges/owncloud-docker/client/status.svg)](https://drone.owncloud.com/owncloud-docker/client)
 [![](https://images.microbadger.com/badges/image/owncloud/client.svg)](https://microbadger.com/images/owncloud/client "Get your own image badge on microbadger.com")
 
 This is our minimal image for [client](https://github.com/owncloud/client) based on our [Alpine container](https://registry.hub.docker.com/u/owncloud/alpine/).
