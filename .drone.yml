@@ -41,6 +41,17 @@ pipeline:
       local: false
       event: [ push ]
 
+  downstream:
+    image: plugins/downstream
+    pull: true
+    secrets: [ drone_token ]
+    repositories:
+      - drone-docker/smashbox@master
+    when:
+      local: false
+      event: [ push ]
+      status: [ success ]
+
   slack:
     image: plugins/slack:1
     pull: true
