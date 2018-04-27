@@ -3,7 +3,7 @@
 [![Build Status](https://drone.owncloud.com/api/badges/owncloud-docker/client/status.svg)](https://drone.owncloud.com/owncloud-docker/client)
 [![](https://images.microbadger.com/badges/image/owncloud/client.svg)](https://microbadger.com/images/owncloud/client "Get your own image badge on microbadger.com")
 
-This is our minimal image for [client](https://github.com/owncloud/client) based on our [Alpine container](https://registry.hub.docker.com/u/owncloud/alpine/).
+This is our image for the [ownCloud Client](https://github.com/owncloud/client) based on our [Alpine container](https://registry.hub.docker.com/u/owncloud/alpine/).
 
 
 ## Versions
@@ -28,12 +28,17 @@ To get an overview about the available versions please take a look at the [GitHu
 ```
 
 
+## Inherited environment variables
+
+* [owncloud/alpine](https://github.com/owncloud-docker/alpine#available-environment-variables)
+
+
 ## Build locally
 
 The available versions should be already pushed to the Docker Hub, but in case you want to try a change locally you can always execute the following command to get this image built locally:
 
 ```
-IMAGE_NAME=owncloud/client ./hooks/build
+docker build -t owncloud/client:latest .
 ```
 
 
@@ -60,5 +65,5 @@ MIT
 ## Copyright
 
 ```
-Copyright (c) 2017 Thomas Boerger <tboerger@owncloud.com>
+Copyright (c) 2018 Thomas Boerger <tboerger@owncloud.com>
 ```
