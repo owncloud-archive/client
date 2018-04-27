@@ -42,7 +42,7 @@ pipeline:
       event: [ push ]
 
   downstream:
-    image: plugins/downstream
+    image: plugins/downstream:1
     pull: true
     secrets: [ drone_token ]
     repositories:
