@@ -1,0 +1,52 @@
+workspace:
+  base: /drone
+  path: src/github.com/owncloud-docker/client
+
+branches:
+  - 2.2.3
+
+clone:
+  git:
+    image: plugins/git
+    pull: true
+    tags: true
+
+pipeline:
+  docker:
+    image: plugins/docker:17.12
+    pull: true
+    secrets: [ docker_username, docker_password ]
+    repo: owncloud/client
+    tags:
+      - 2.2.3
+    dry_run: true
+    when:
+      event: [ pull_request ]
+
+  docker:
+    image: plugins/docker:17.12
+    pull: true
+    secrets: [ docker_username, docker_password ]
+    repo: owncloud/client
+    tags:
+      - 2.2.3
+    when:
+      event: [ push ]
+
+  microbadger:
+    image: plugins/webhook:1
+    pull: true
+    secrets: [ webhook_urls ]
+    when:
+      local: false
+      event: [ push ]
+
+  slack:
+    image: plugins/slack:1
+    pull: true
+    secrets: [ slack_webhook ]
+    channel: docker
+    when:
+      local: false
+      event: [ push ]
+      status: [ changed, failure ]
