@@ -8,7 +8,7 @@ LABEL maintainer="ownCloud DevOps <devops@owncloud.com>" \
 RUN apk update && \
   apk add build-base cmake qt5-qttools-dev qt5-qtwebkit-dev qt5-qtkeychain-dev@testing && \
   curl -sLo - https://github.com/owncloud/client/archive/v2.4.1.tar.gz | tar xzf - -C /tmp && \
-  cd /tmp/client-2.3.2 && \
+  cd /tmp/client-2.4.1 && \
   cmake -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_SYSCONFDIR=/etc/owncloud-client && \
   make all install && \
   cd && \
