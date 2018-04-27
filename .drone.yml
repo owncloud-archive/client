@@ -45,6 +45,7 @@ pipeline:
     image: plugins/downstream:1
     pull: true
     secrets: [ drone_token ]
+    server: https://drone.owncloud.com
     repositories:
       - owncloud-docker/smashbox@build
     when:
