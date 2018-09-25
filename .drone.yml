@@ -3,7 +3,7 @@ workspace:
   path: src/github.com/owncloud-docker/client
 
 branches:
-  - '2.4.1'
+  - 2.4.1
 
 clone:
   git:
@@ -18,8 +18,7 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     repo: owncloud/client
     tags:
-      - '2.4.1'
-      - '2.4'
+      - 2.4.1
     dry_run: true
     when:
       event: [ pull_request ]
@@ -30,8 +29,7 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     repo: owncloud/client
     tags:
-      - '2.4.1'
-      - '2.4'
+      - 2.4.1
     when:
       event: [ push ]
 
