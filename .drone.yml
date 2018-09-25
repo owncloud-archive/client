@@ -53,6 +53,7 @@ pipeline:
       local: false
       event: [ push ]
       status: [ success ]
+      branch: [ build ]
 
   slack:
     image: plugins/slack:1
