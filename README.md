@@ -33,15 +33,6 @@ To get an overview about the available versions please take a look at the [GitHu
 * [owncloud/alpine](https://github.com/owncloud-docker/alpine#available-environment-variables)
 
 
-## Build locally
-
-The available versions should be already pushed to the Docker Hub, but in case you want to try a change locally you can always execute the following command to get this image built locally:
-
-```
-docker build -t owncloud/client:latest .
-```
-
-
 ## Issues, Feedback and Ideas
 
 Open an [Issue](https://github.com/owncloud-docker/client/issues)
