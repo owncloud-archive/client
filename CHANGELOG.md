@@ -4,6 +4,7 @@
 
 * Changed
   * Unified ownership of all files
+  * Upgrade to 2.5.4
 
 ## 2018-09-25
 
