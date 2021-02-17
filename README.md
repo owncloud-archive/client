@@ -5,6 +5,7 @@
 
 This is our image for the [ownCloud Client](https://github.com/owncloud/client) based on our [Alpine container](https://registry.hub.docker.com/u/owncloud/alpine/).
 
+> **Deprecated**
 
 ## Versions
 
